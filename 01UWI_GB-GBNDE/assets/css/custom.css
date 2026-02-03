@@ -1,0 +1,94 @@
+/* Custom font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* Override all font families to match Inter stack */
+html {
+  --sys-body-large: 400 1rem / 1.5rem Inter, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
+  --sys-body-large-font: Inter, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
+  --sys-body-medium: 400 .875rem / 1.25rem Inter, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
+  --sys-body-medium-font: Inter, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
+  --sys-body-small: 400 .75rem / 1rem Inter, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
+  --sys-body-small-font: Inter, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
+  --sys-display-large: 400 3.562rem / 4rem Inter, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
+  --sys-display-large-font: Inter, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
+  --sys-display-medium: 400 2.812rem / 3.25rem Inter, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
+  --sys-display-medium-font: Inter, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
+  --sys-display-small: 400 2.25rem / 2.75rem Inter, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
+  --sys-display-small-font: Inter, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
+  --sys-headline-large: 400 2rem / 2.5rem Inter, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
+  --sys-headline-large-font: Inter, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
+  --sys-headline-medium: 400 1.75rem / 2.25rem Inter, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
+  --sys-headline-medium-font: Inter, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
+  --sys-headline-small: 400 1.5rem / 2rem Inter, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
+  --sys-headline-small-font: Inter, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
+  --sys-label-large: 500 .875rem / 1.25rem Inter, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
+  --sys-label-large-font: Inter, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
+  --sys-label-medium: 500 .75rem / 1rem Inter, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
+  --sys-label-medium-font: Inter, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
+  --sys-label-small: 500 .688rem / 1rem Inter, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
+  --sys-label-small-font: Inter, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
+  --sys-title-large: 400 1.375rem / 1.75rem Inter, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
+  --sys-title-large-font: Inter, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
+  --sys-title-medium: 500 1rem / 1.5rem Inter, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
+  --sys-title-medium-font: Inter, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
+  --sys-title-small: 500 .875rem / 1.25rem Inter, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
+  --sys-title-small-font: Inter, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
+}
+
+/* Also set the base font family on html and body for good measure */
+html, body {
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif !important;
+}
+
+*/
+
+/* Disable the Background-Image Overlay */
+.custom-search-bar-container .background-overlay {
+    display: none;
+}
+
+/* Custom color scheme */
+:root {
+    --sys-primary: #0f5640;
+    --sys-on-primary: #ffffff;
+    --sys-background: #f4f5f6;
+    --sys-outline: #4a5568;
+    --sys-primary-container: #a6f2d1;
+    --sys-on-primary-container: #002116;
+    --sys-secondary: #4c6358;
+    --sys-on-secondary: #ffffff;
+    --sys-secondary-container: #cfe9da;
+    --sys-on-secondary-container: #092017;
+    --sys-tertiary: #3e6374;
+    --sys-on-tertiary: #ffffff;
+    --sys-tertiary-container: #c2e8fd;
+    --sys-on-tertiary-container: #001f2a;
+    --mdc-text-button-label-text-color: #0f5640;
+}
+
+/* Remove uppercase labels */
+.main-menu-container .mdc-button {
+    --mdc-filled-button-label-text-transform: none !important;
+    --mdc-text-button-label-text-transform: none !important;
+}
+
+.record-indication.text-uppercase,
+.record-type.text-uppercase {
+    text-transform: none;
+}
+
+/*  Make the "All filters" button visually pop, from PHSC */
+button#allFilterToggleButton.mdc-button.mat-mdc-button.mat-mdc-button-base {
+    box-shadow: inset 0 0 0 1px var(--sys-outline-variant);
+    border-radius: .5rem;
+    font-weight: 700;
+}
+
+
+/*Make record title on search results bigger and bolder, from PHSC */
+nde-record-title .record-title h3.mat-body-large,
+nde-record-title .record-title nde-highlight>span.mat-body-medium,
+nde-record-title .record-title nde-highlight>span.mat-body-medium .ctm-highlight {
+    font-size: 1rem;
+    font-weight: 700;
+}
