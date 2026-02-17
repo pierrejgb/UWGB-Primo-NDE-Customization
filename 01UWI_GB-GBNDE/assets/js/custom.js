@@ -1,1 +1,10 @@
-console.log('Helo from custom js');
+/*----------Code for LibraryH3lp chat widget-----------*/
+var needsJs = document.createElement('div');
+needsJs.setAttribute('class', 'needs-js');
+document.body.appendChild(needsJs);
+
+var s = document.createElement('script');
+s.id = 'localScript';
+s.src = 'https://libraryh3lp.com/js/libraryh3lp.js?19803';
+document.body.appendChild(s);
+/*---------------LibraryH3lp code ends here---------------*/
