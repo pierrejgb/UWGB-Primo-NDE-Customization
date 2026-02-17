@@ -40,13 +40,6 @@ html, body {
   font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif !important;
 }
 
-*/
-
-/* Disable the Background-Image Overlay */
-.custom-search-bar-container .background-overlay {
-    display: none;
-}
-
 /* Custom color scheme */
 :root {
     --sys-primary: #0f5640;
@@ -64,6 +57,11 @@ html, body {
     --sys-tertiary-container: #c2e8fd;
     --sys-on-tertiary-container: #001f2a;
     --mdc-text-button-label-text-color: #0f5640;
+}
+
+/* Disable the Background-Image Overlay */
+.custom-search-bar-container .background-overlay {
+    display: none;
 }
 
 /* Remove uppercase labels */
