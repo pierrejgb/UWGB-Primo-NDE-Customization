@@ -11,9 +11,17 @@
     </a>
     <div class="utility align-self-center pr-fluid py-2 ml-auto hidden-sm-down ">
         <ul class="list-unstyled justify-content-end flex flex-wrap">
-            <li><a href="https://wisconsin-uwgb.primo.exlibrisgroup.com/discovery/account?vid=01UWI_GB:GB&amp;section=overview"><i class="fa fa-user" aria-hidden="true"></i> My Library Account</a></li>
-            <li><a href="/hours"><i class="fa fa-clock-o" aria-hidden="true"></i> Hours</a></li>
-            <li><a href="/ResearchHelp"><i class="fa fa-comment" aria-hidden="true"></i> Ask a Librarian</a></li>
+            <li><a href="https://wisconsin-uwgb.primo.exlibrisgroup.com/nde/account/overview?vid=01UWI_GB:GBNDE"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 1536" aria-hidden="true" focusable="false">
+                        <path d="M1280 1271q0 109-62.5 187t-150.5 78H213q-88 0-150.5-78T0 1271q0-85 8.5-160.5t31.5-152t58.5-131t94-89T327 704q131 128 313 128t313-128q76 0 134.5 34.5t94 89t58.5 131t31.5 152t8.5 160.5zm-256-887q0 159-112.5 271.5T640 768T368.5 655.5T256 384t112.5-271.5T640 0t271.5 112.5T1024 384z"></path>
+                    </svg> My Library Account</a></li>
+            <li><a href="https://library.uwgb.edu/hours"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1536 1536" aria-hidden="true" focusable="false">
+                        <path d="M896 416v448q0 14-9 23t-23 9H544q-14 0-23-9t-9-23v-64q0-14 9-23t23-9h224V416q0-14 9-23t23-9h64q14 0 23 9t9 23zm416 352q0-148-73-273t-198-198t-273-73t-273 73t-198 198t-73 273t73 273t198 198t273 73t273-73t198-198t73-273zm224 0q0 209-103 385.5T1153.5 1433T768 1536t-385.5-103T103 1153.5T0 768t103-385.5T382.5 103T768 0t385.5 103T1433 382.5T1536 768z"></path>
+                    </svg> Hours</a></li>
+
+
+            <li><a href="https://library.uwgb.edu/ResearchHelp"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1536" aria-hidden="true" focusable="false">
+                        <path d="M1792 640q0 174-120 321.5t-326 233t-450 85.5q-70 0-145-8q-198 175-460 242q-49 14-114 22q-17 2-30.5-9t-17.5-29v-1q-3-4-.5-12t2-10t4.5-9.5l6-9l7-8.5l8-9q7-8 31-34.5t34.5-38t31-39.5t32.5-51t27-59t26-76q-157-89-247.5-220T0 640q0-130 71-248.5T262 187T548 50.5T896 0q244 0 450 85.5t326 233T1792 640z"></path>
+                    </svg> Ask a Librarian</a></li>
         </ul>
     </div>
 </nav>
@@ -42,6 +50,13 @@
 
     .global-top-navbar .menu-button {
         border-radius: 0
+    }
+
+    .global-top-navbar .utility svg {
+        height: 1em;
+        width: auto;
+        vertical-align: -0.125em;
+        fill: currentColor;
     }
 
     .global-top-navbar .utility a {
@@ -134,9 +149,6 @@
             display: none !important;
         }
     }
-
-
-
 
     @media(min-width:1280px) {
         .p-fluid {
