@@ -1,0 +1,21 @@
+{
+    "apiKey": "d9e27ee1-4361-46b6-83fc-e79c5cb5bb6f",
+    "libraryId": "397",
+    "viewOption": "single-stack",
+    "journalCoverImagesEnabled": "true",
+    "journalBrowZineWebLinkTextEnabled": "false",
+    "articleBrowZineWebLinkTextEnabled": "false",
+    "articlePDFDownloadLinkEnabled": "true",
+    "articleLinkEnabled": "true",
+    "printRecordsIntegrationEnabled": "true",
+    "showFormatChoice": "false",
+    "showLinkResolverLink": "true",
+    "enableLinkOptimizer": "true",
+    "articleRetractionWatchEnabled": "true",
+    "articleExpressionOfConcernEnabled": "true",
+    "problematicJournalEnabled": "true",
+    "articlePDFDownloadViaUnpaywallEnabled": "true",
+    "articleLinkViaUnpaywallEnabled": "true",
+    "articleAcceptedManuscriptPDFViaUnpaywallEnabled": "false",
+    "articleAcceptedManuscriptArticleLinkViaUnpaywallEnabled": "false"
+  }
