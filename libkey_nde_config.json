@@ -9,7 +9,7 @@
     "articleLinkEnabled": "true",
     "printRecordsIntegrationEnabled": "true",
     "showFormatChoice": "false",
-    "showLinkResolverLink": "true",
+    "showLinkResolverLink": "false",
     "enableLinkOptimizer": "true",
     "articleRetractionWatchEnabled": "true",
     "articleExpressionOfConcernEnabled": "true",
