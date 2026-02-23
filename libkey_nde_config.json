@@ -2,6 +2,7 @@
     "apiKey": "d9e27ee1-4361-46b6-83fc-e79c5cb5bb6f",
     "libraryId": "397",
     "viewOption": "single-stack",
+    "unpaywallEmailAddressKey": "refdesk@uwgb.edu",
     "journalCoverImagesEnabled": "true",
     "journalBrowZineWebLinkTextEnabled": "false",
     "articleBrowZineWebLinkTextEnabled": "false",
