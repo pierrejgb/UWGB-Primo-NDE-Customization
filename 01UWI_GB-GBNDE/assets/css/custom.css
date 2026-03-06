@@ -60,6 +60,11 @@ body {
     --mdc-text-button-label-text-color: #0f5640;
     --sys-inverse-on-surface: #f4f5f6;
     --mdc-outlined-button-label-text-color: #2d3748;
+    --mdc-protected-button-label-text-color: #2d3748;
+    /* UWGB neutral button */
+    --mdc-protected-button-container-color: #e2e8f0;
+    /* UWGB neutral button */
+    --mdc-elevated-card-container-color: var(--lightBG);
 }
 
 /* Disable the Background-Image Overlay */
@@ -112,4 +117,17 @@ nde-requests nde-notification div.notification-container {
 nde-requests nde-notification a.availability-button.mat-label-large,
 nde-requests nde-notification .notification-container span#notifText {
     font-size: 1rem;
+}
+
+/* Normalize Rapido request tiles */
+nde-ngrs-offer-drawer .nde-ngrs-offer-drawer-dark-text.nde-ngrs-offer-drawer-dark-text,
+nde-ngrs-offer-drawer .nde-ngrs-offer-drawer-text-container.nde-ngrs-offer-drawer-text-container {
+    color: var(--sys-on-primary-container);
+    line-height: 1.5rem;
+    font-size: 1rem;
+
+}
+
+nde-ngrs-offer-drawer .nde-ngrs-offer-drawer-content-container {
+    margin-top: 1rem;
 }
