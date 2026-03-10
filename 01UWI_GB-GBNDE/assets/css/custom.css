@@ -109,8 +109,9 @@ nde-physical-availability-line mat-icon[data-mat-icon-name="Unavailable-record-i
     fill: #B85C00;
 }
 
-/* Bring back yellow bar in Requests section of item record */
-nde-requests nde-notification div.notification-container {
+/* Bring back yellow bar in Requests section of item record and search results */
+nde-requests nde-notification div.notification-container,
+.mat-mdc-snack-bar-container div.mat-mdc-snackbar-surface {
     background-color: #faf4c7;
 }
 
