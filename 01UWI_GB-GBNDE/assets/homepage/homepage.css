@@ -37,10 +37,6 @@
   list-style: disc;
 }
 
-.info-box a {
-  color: var(--mdc-text-button-label-text-color);
-}
-
 @media (max-width: 767px) {
   .info-boxes-container {
     flex-direction: column;
