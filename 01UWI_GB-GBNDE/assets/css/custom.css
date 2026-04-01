@@ -67,6 +67,17 @@ body {
     --mdc-elevated-card-container-color: var(--lightBG);
 }
 
+:link,
+:visited {
+    color: var(--sys-primary);
+}
+
+a:hover,
+a:focus,
+a:active {
+    color: #0c3b33
+}
+
 /* Disable the Background-Image Overlay */
 .custom-search-bar-container .background-overlay {
     display: none;
@@ -120,6 +131,30 @@ nde-requests nde-notification .notification-container span#notifText {
     font-size: 1rem;
 }
 
+/* --- Brief Display alignment adjustments from BCLibraries*/
+/* align label line-height with content */
+p.record-main-details-font-size span.light-text.margin-right-small {
+    line-height: 1.25rem;
+}
+
+/* add space after delimiter */
+span.flex-row.ng-star-inserted {
+    margin-inline-end: .25rem;
+}
+
+/* fix gap spacing for availability buttons */
+/* 1. Make the wrapper transparent to the Flexbox layout */
+.responsive-availability-layout>ng-component {
+    display: contents;
+}
+
+/* 2. Hide the inner custom component if it is completely empty */
+.responsive-availability-layout>ng-component>*:empty {
+    display: none;
+}
+
+/* End brief results alignment */
+
 /* Normalize Rapido request tiles */
 nde-ngrs-offer-drawer .nde-ngrs-offer-drawer-dark-text.nde-ngrs-offer-drawer-dark-text,
 nde-ngrs-offer-drawer .nde-ngrs-offer-drawer-text-container.nde-ngrs-offer-drawer-text-container {
@@ -131,4 +166,15 @@ nde-ngrs-offer-drawer .nde-ngrs-offer-drawer-text-container.nde-ngrs-offer-drawe
 
 nde-ngrs-offer-drawer .nde-ngrs-offer-drawer-content-container {
     margin-top: 1rem;
+}
+
+/* Recolor  Rapido tile icons */
+mat-icon[data-mat-icon-name="Physical_Copy"] svg path:first-of-type,
+mat-icon[data-mat-icon-name="Mail"] svg path:first-of-type {
+    fill: #E9F9F8;
+}
+
+mat-icon[data-mat-icon-name="Physical_Copy"] svg path:last-of-type,
+mat-icon[data-mat-icon-name="Mail"] svg path:last-of-type {
+    fill: #1F766E;
 }
