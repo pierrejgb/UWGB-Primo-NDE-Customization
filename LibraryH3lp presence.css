@@ -1,0 +1,78 @@
+.libraryh3lp {
+    background: #234e52;
+    border-radius: 3px 0 0 3px;
+    font-size: 1.1rem;
+    position: fixed;
+    bottom: 25%;
+    right: 0;
+    z-index: 999;
+    font-weight: 500;
+}
+
+.libraryh3lp:hover {
+    padding-right: .5em;
+    background: #142c2e;
+}
+
+.libraryh3lp a {
+    color: #ffffff;
+}
+
+.libraryh3lp svg {
+    fill: #ffffff;
+    opacity: 0.7;
+    max-width: 75%;
+}
+
+/* Padding cannot be applied to .libraryh3lp because it causes the div to display when offline. Adding the padding to the span makes it show correctly, and adding inline-block allows span to show height */
+.libraryh3lp-online {
+    padding: 1rem;
+    display: inline-block;
+    text-align: center;
+}
+
+@media (max-width:767px) {
+    .libraryh3lp-online {
+        display: none;
+    }
+}
+
+/******* Proactive box *******/
+.lh3-proactive-invitation {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+}
+
+.lh3-proactive-invitation,
+.ui-dialog-buttonpane.ui-widget-content.ui-helper-clearfix,
+.ui-widget button {
+    font-family: Inter, system-ui, Arial, sans-serif;
+    border: none;
+    background: #f4f5f6;
+    color: #000000;
+}
+
+.lh3-proactive-invitation .ui-widget-header {
+    background: #f4f5f6;
+    border: none;
+}
+
+.lh3-proactive-invitation #ui-id-2 {
+    color: #0c3b33;
+    font-size: 1.3em;
+}
+
+.lh3-proactive-invitation .ui-dialog-buttonpane .ui-dialog-buttonset {
+    float: left;
+}
+
+.lh3-proactive-invitation .ui-state-default.ui-button-text-only {
+    background: #234e52;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    padding: .4rem;
+}
+
+.lh3-proactive-invitation .ui-state-default.ui-button-text-only:hover {
+    background: #142c2e;
+}
