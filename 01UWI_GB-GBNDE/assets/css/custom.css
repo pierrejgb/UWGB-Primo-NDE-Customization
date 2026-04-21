@@ -101,11 +101,10 @@ button#allFilterToggleButton.mdc-button.mat-mdc-button.mat-mdc-button-base {
     font-weight: 700;
 }
 
-/* Make quick filter buttons pop */
-.quick-filter-btn-active.mdc-button {
-    color: #2d3748;
+/* Make active quick filter buttons pop */
+nde-quick-filters button.quick-filter-btn-active.mdc-button {
+    background-color: #d8dcdf !important;
 }
-
 
 /*Make record title on search results bigger and bolder, from PHSC */
 nde-record-title .record-title h3.mat-body-large,
@@ -129,17 +128,6 @@ nde-requests nde-notification div.notification-container,
 nde-requests nde-notification a.availability-button.mat-label-large,
 nde-requests nde-notification .notification-container span#notifText {
     font-size: 1rem;
-}
-
-/* --- Brief Display alignment adjustments from BCLibraries*/
-/* align label line-height with content */
-p.record-main-details-font-size span.light-text.margin-right-small {
-    line-height: 1.25rem;
-}
-
-/* add space after delimiter */
-span.flex-row.ng-star-inserted {
-    margin-inline-end: .25rem;
 }
 
 /* fix gap spacing for availability buttons */
@@ -177,4 +165,15 @@ mat-icon[data-mat-icon-name="Mail"] svg path:first-of-type {
 mat-icon[data-mat-icon-name="Physical_Copy"] svg path:last-of-type,
 mat-icon[data-mat-icon-name="Mail"] svg path:last-of-type {
     fill: #1F766E;
+}
+
+/* Hide Expand My Results filter (CDI) */
+mat-slide-toggle[data-qa="filters_toggle_expand_my_results"],
+mat-slide-toggle[data-qa="filters_toggle_expand_my_results"]+mat-divider {
+    display: none;
+}
+
+/* Hide Citation Trail in brief results only */
+nde-search-result-item-container nde-record-citations-and-times-cited {
+    display: none;
 }
