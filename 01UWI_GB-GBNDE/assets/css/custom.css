@@ -167,13 +167,12 @@ mat-icon[data-mat-icon-name="Mail"] svg path:last-of-type {
     fill: #1F766E;
 }
 
-/* Hide Expand My Results filter (CDI) */
-mat-slide-toggle[data-qa="filters_toggle_expand_my_results"],
-mat-slide-toggle[data-qa="filters_toggle_expand_my_results"]+mat-divider {
-    display: none;
-}
-
 /* Hide Citation Trail in brief results only */
 nde-search-result-item-container nde-record-citations-and-times-cited {
     display: none;
+}
+
+/* Remove link color from non-clickable record titles */
+.record-title.not-linkable {
+    color: var(--darkText);
 }
