@@ -17,3 +17,46 @@ _mtm.push({ 'mtm.startTime': (new Date().getTime()), 'event': 'mtm.Start' });
     g.async = true; g.src = 'https://cdn.matomo.cloud/uwgb.matomo.cloud/container_rXoVoDX6.js'; s.parentNode.insertBefore(g, s);
 })();
 /*---------------End Matomo Tag Manager---------------*/
+
+/*---------------Hide closed hold shelves---------------*/
+(function () {
+  'use strict';
+
+  var HIDDEN_LABELS = [
+    'Sheboygan Library',
+    'UW Green Bay Archives and Area Research Center'
+  ];
+
+  function hideOptions(root) {
+    (root || document).querySelectorAll('mat-option .mdc-list-item__primary-text').forEach(function (span) {
+      if (HIDDEN_LABELS.indexOf(span.textContent.trim()) !== -1) {
+        var opt = span.closest('mat-option');
+        if (opt && opt.style.display !== 'none') {
+          opt.style.display = 'none';
+          opt.setAttribute('aria-hidden', 'true');
+        }
+      }
+    });
+  }
+
+  // Run immediately in case options are already in the DOM
+  hideOptions();
+
+  // Scope the observer to .cdk-overlay-container — the element Angular Material
+  // uses to render all dropdown panels. 
+  var overlayContainer = document.querySelector('.cdk-overlay-container');
+  var observeTarget = overlayContainer || document.body;
+
+  var observer = new MutationObserver(function (mutations) {
+    for (var i = 0; i < mutations.length; i++) {
+      if (mutations[i].addedNodes.length > 0) {
+        hideOptions(mutations[i].target);
+        break;
+      }
+    }
+  });
+
+  observer.observe(observeTarget, { childList: true, subtree: true });
+
+})();
+/*---------------End closed hold shelves---------------*/
