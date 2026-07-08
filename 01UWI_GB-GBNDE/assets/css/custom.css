@@ -114,11 +114,6 @@ nde-record-title .record-title nde-highlight>span.mat-body-medium .ctm-highlight
     font-weight: 700;
 }
 
-/* Make unavailable physical item status circle orange instead of gray */
-nde-physical-availability-line mat-icon[data-mat-icon-name="Unavailable-record-indicator"] circle {
-    fill: #B85C00;
-}
-
 /* Bring back yellow bar in Requests section of item record and search results */
 nde-requests nde-notification div.notification-container,
 .mat-mdc-snack-bar-container div.mat-mdc-snackbar-surface {
@@ -175,4 +170,44 @@ nde-search-result-item-container nde-record-citations-and-times-cited {
 /* Remove link color from non-clickable record titles */
 .record-title.not-linkable {
     color: var(--darkText);
+}
+
+/* Physical record availability - algin with online resource buttons, from Duke */
+nde-record-availability .availability-status {
+    border-radius: .3125rem;
+    padding: .3rem .8rem;
+    background: #fff;
+    border: 1px solid var(--border)
+}
+
+nde-record-availability .availability-status .availability-code span.light-text,
+nde-record-availability .availability-status span.light-text {
+    font-weight: 500 !important
+}
+
+/* Available */
+nde-record-availability .availability-status:has(mat-icon[data-mat-icon-name=Available-record-indicator]) {
+    border-color: var(--sys-primary)
+}
+
+/* Not available */
+nde-record-availability .availability-status:has(mat-icon[data-mat-icon-name=Unavailable-record-indicator]) {
+    border-color: #B85C00;
+}
+
+nde-record-availability .availability-status:has(mat-icon[data-mat-icon-name=Unavailable-record-indicator]) .availability-code {
+    color: #8A4500;
+}
+
+nde-record-availability mat-icon[data-mat-icon-name=Unavailable-record-indicator] svg circle {
+    fill: #B85C00;
+}
+
+/* Check holdings */
+nde-record-availability .availability-status:not(:has(mat-icon)) {
+    border-color: #B85C00;
+}
+
+nde-record-availability .availability-status:not(:has(mat-icon)) span {
+    color: #8A4500;
 }
