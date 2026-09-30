@@ -211,3 +211,69 @@ nde-record-availability .availability-status:not(:has(mat-icon)) {
 nde-record-availability .availability-status:not(:has(mat-icon)) span {
     color: #8A4500;
 }
+
+/* Remove from requests: "Please note there might be other requests under the..." Adapted from UWW */
+nde-requests .item-level-request-msg-container:has(button[aria-label="Available At Other Institutions section"]) {
+    display: none !important;
+}
+
+/* Disable "Get it from other institutions" accordion,  Adapted from UWW */
+    /* Disable click */
+nde-get-it-other-institution .inst-header mat-panel-title {
+    pointer-events: none;
+    text-decoration: none !important;
+}
+
+    /* Hide accordion arrow */
+nde-get-it-other-institution .inst-header mat-icon[data-mat-icon-name="Arrow-down"],
+nde-get-it-other-institution .inst-header mat-icon[data-mat-icon-name="Add"] {
+    display: none !important;
+}
+
+/* Reorder sections in full record display */
+nde-full-display-container mat-accordion {
+    display: flex;
+    flex-direction: column;
+}
+
+/* View Online */
+mat-accordion[displaymode="flat"]>#nui\.getit\.service_viewit {
+    order: 0 !important;
+}
+
+/* Locations for physical items & item-level requests */
+mat-accordion[displaymode="flat"]>#nde\.getit\.locations {
+    order: 1 !important;
+}
+
+/* Requests */
+mat-accordion[displaymode="flat"]>#nde\.request\.title {
+    order: 2 !important;
+}
+
+/* Details */
+mat-accordion[displaymode="flat"]>#brief\.results\.tabs\.details {
+    order: 3 !important;
+}
+
+/* Other Locations */
+mat-accordion[displaymode="flat"]>#nui\.brief\.results\.tabs\.getit_other {
+    order: 4 !important;
+}
+
+/* Virtual Browse */
+mat-accordion[displaymode="flat"]>#brief\.results\.tabs\.browseshelf {
+    order: 5 !important;
+}
+
+mat-accordion[displaymode="flat"]>#nui\.brief\.results\.tabs\.links {
+    order: 6 !important;
+}
+
+mat-accordion[displaymode="flat"]>#nde\.relatedItems\.chaptersOfThisBook {
+    order: 7 !important;
+}
+
+mat-accordion[displaymode="flat"]>#nde\.relatedItems\.bookReviews {
+    order: 8 !important;
+}
