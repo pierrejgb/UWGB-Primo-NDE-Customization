@@ -196,7 +196,7 @@ nde-record-availability .availability-status:has(mat-icon[data-mat-icon-name=Una
 }
 
 nde-record-availability .availability-status:has(mat-icon[data-mat-icon-name=Unavailable-record-indicator]) .availability-code {
-    color: #8A4500;
+    color: #b35900;
 }
 
 nde-record-availability mat-icon[data-mat-icon-name=Unavailable-record-indicator] svg circle {
@@ -205,11 +205,11 @@ nde-record-availability mat-icon[data-mat-icon-name=Unavailable-record-indicator
 
 /* Check holdings */
 nde-record-availability .availability-status:not(:has(mat-icon)) {
-    border-color: #B85C00;
+    border-color: #b85c00;
 }
 
 nde-record-availability .availability-status:not(:has(mat-icon)) span {
-    color: #8A4500;
+    color: #b35900;
 }
 
 /* Remove from requests: "Please note there might be other requests under the..." Adapted from UWW */
@@ -276,4 +276,21 @@ mat-accordion[displaymode="flat"]>#nde\.relatedItems\.chaptersOfThisBook {
 
 mat-accordion[displaymode="flat"]>#nde\.relatedItems\.bookReviews {
     order: 8 !important;
+}
+
+/* Change Third Iron predatory/retracted buttonst to red */
+button.ti-dropdown-button[aria-label="Retracted Article"],
+button.ti-dropdown-button[aria-label="Problematic Journal"] {
+  color: var(--sys-error);
+  border: 1px solid var(--sys-error);
+}
+ 
+button.ti-dropdown-button[aria-label="Retracted Article"] article-alert-icon svg path,
+button.ti-dropdown-button[aria-label="Problematic Journal"] article-alert-icon svg path  {
+  fill: var(--sys-error)!important;
+}
+
+/* Remove extra spacing for non-UW requests */
+nde-record-availability nde-physical-availability-line button.available-at-button:not(mat-icon + button) {
+    margin-right: -.45rem;
 }
